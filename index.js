@@ -188,5 +188,5 @@ app.post('/logout', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server is running on Port ${PORT}`);
+    console.log(`BudgetMate app listening at http://localhost:${port}`);
 });
