@@ -7,7 +7,7 @@ import db from './db.js';
 
 
 const app = express();
-const port = process.env.PORT;
+const port = 3000;
 
 app.use(cors()); 
 app.use(bodyParser.json());
