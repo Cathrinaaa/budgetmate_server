@@ -1,6 +1,6 @@
 import express from 'express';
 import bcrypt from 'bcrypt';
-import bodyParser from 'body-parser';
+/* import bodyParser from 'body-parser'; */
 import cors from 'cors';
 import db from './db.js';
 
@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors()); 
-app.use(bodyParser.json());
+app.use(express.json());
 
 // REGISTER USER
 app.post('/add-user', async (req, res) => {
